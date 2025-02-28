@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
-public class ThreadConnessione {
+public class ThreadConnessione implements Runnable{
     private Socket client;
     private BufferedReader in;
     private ListaClient listaClient;
